@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ico/favico.jpg" type="image/png">
+    <title>ludus visualis</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <div class="title-left">
+                <h1>ludus visualis</h1>
+                <h2>Une encyclopédie de la console de jeu</h2>
+            </div>
+            <div class="title-right">
+                <p></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <div class="filtre">
+                    <div class="filtre-cat constructeur">
+                        <p>Constructeur :</p>
+                        <select class="constructeur-select" id="constructeur-select">
+                        </select>
+                    </div>
+                    <div class="filtre-cat generation">
+                        <p>Génération de console :</p>
+                        <div class="gen-list">
+                            <button class="gen-button active" data-generation="0">Toutes</button>
+                            <button class="gen-button" data-generation="1">1ère</button>
+                            <button class="gen-button" data-generation="2">2ème</button>
+                            <button class="gen-button" data-generation="3">3ème</button>
+                            <button class="gen-button" data-generation="4">4ème</button>
+                            <button class="gen-button" data-generation="5">5ème</button>
+                            <button class="gen-button" data-generation="6">6ème</button>
+                            <button class="gen-button" data-generation="7">7ème</button>
+                            <button class="gen-button" data-generation="8">8ème</button>
+                            <button class="gen-button" data-generation="9">9ème</button>
+                        </div>
+                    </div>
+                    <div class="filtre-cat decennie">
+                        <p>Époque :</p>
+                        <div class="dec-list">
+                            <button class="dec-button active" data-decennie="0">Toutes</button>
+                            <button class="dec-button" data-decennie="1970">1970s</button>
+                            <button class="dec-button" data-decennie="1980">1980s</button>
+                            <button class="dec-button" data-decennie="1990">1990s</button>
+                            <button class="dec-button" data-decennie="2000">2000s</button>
+                            <button class="dec-button" data-decennie="2010">2010s</button>
+                            <button class="dec-button" data-decennie="2020">2020s</button>
+                        </div>
+                    </div>
+                    <div class="filtre-cat typeconsole">
+                        <p>Type de console :</p>
+                        <div class="typeconsole-list">
+                            <button class="typeconsole-button active" data-typeconsole="tous">Tous</button>
+                            <button class="typeconsole-button" data-typeconsole="salon">Salon</button>
+                            <button class="typeconsole-button" data-typeconsole="portable">Portable</button>
+                            <button class="typeconsole-button" data-typeconsole="hybride">Hybride</button>
+                            <button class="typeconsole-button" data-typeconsole="autre">Autre</button>
+                        </div>
+                    </div>
+                    <div class="filtre-cat reset">
+                        <button class="reset-btn">Réinitialiser les filtres</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="tri">
+                    <div class="tri-content">
+                        <p>Trier par :</p>
+                        <div class="tri-list">
+                            <div class="tri-cat">
+                                <button class="tri-button active" data-column="annee_sortie" data-order="asc">Date de sortie croissante</button>
+                                <button class="tri-button" data-column="annee_sortie" data-order="desc">Date de sortie décroissante</button>
+                            </div>
+                            <div class="tri-cat">
+                                <button class="tri-button" data-column="nom" data-order="asc">Nom croissant</button>
+                                <button class="tri-button" data-column="nom" data-order="desc">Nom décroissant</button>
+                            </div>
+            
+                        </div>   
+                    </div>
+                </div>
+                <div class="console-list" id="console-list">
+                </div>
+            </div>
+        
+            
+        </div>
+    </div>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

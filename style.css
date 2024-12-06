@@ -1,0 +1,192 @@
+* {
+    font-family: 'Helvetica Now Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    line-height: 5rem;
+    padding: 10px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+h3{
+    border-bottom: 1px solid black;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+button {
+    padding: 4px 12px;
+    border: 1px solid black;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    font-size: 0.8rem;
+}
+
+button:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #000000;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid black;
+}
+
+.title-left{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+
+.title-right{
+    padding: 10px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.content-left{
+    border-right: 1px solid black;
+    position: sticky;
+}
+
+.filtre {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtre-cat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.constructeur-select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.gen-list, .dec-list, .typeconsole-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gen-list, .dec-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.tri {
+    border-bottom: 1px solid black;
+}
+
+.tri-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tri-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.tri-cat {
+    display: flex;
+    gap: 10px;
+}
+
+.console-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.console-container {
+    display: flex;
+    flex-direction: column;
+    height: 600px ;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.console-image {
+    border-bottom: 1px solid black;
+}
+
+.console-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.console img{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    object-fit: contain;
+}
+
+.console-desc{
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.console-year, .console-type{
+    padding: 5px 0 0 10px;
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    left: 170px;
+}
