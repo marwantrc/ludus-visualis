@@ -1,6 +1,6 @@
 <h1>Ludus Visualis</h1>
 
-<a src="https://marwan.zalagh.mmi-velizy.fr/ludus_visualis">Lien du site</a>
+<p>Lien du site : https://marwan.zalagh.mmi-velizy.fr/ludus_visualis</p>
 
 <h2>Ludus Visualis est une liste de toutes les consoles de jeu produites en masse
 depuis la Magnavox Odyssey, sortie en 1972, jusqu’à la Playstation 5 Pro,
